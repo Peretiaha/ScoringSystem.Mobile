@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ScoringSystem.Mobile.Views.ItemDetailPage"
+             Title="{Binding Title}">
+
+    <StackLayout Spacing="20" Padding="15">
+        <Image Source="{Binding Item.Photo}" Grid.Row="1" 
+               x:Name="IncidentImageData" Grid.ColumnSpan="4" BackgroundColor="DarkGray" 
+               Aspect="AspectFill" WidthRequest="50" HeightRequest="175"/>
+        <Label Text="Name:" FontSize="Medium" />
+        <Label Text="{Binding Item.Name}" d:Text="Item name" FontSize="Small"/>
+        <Label Text="Lastname:" FontSize="Medium" />
+        <Label Text="{Binding Item.LastName}" d:Text="Item description" FontSize="Small"/>
+        <Label Text="Email:" FontSize="Medium" />
+        <Label Text="{Binding Item.Email}" d:Text="Item description" FontSize="Small"/>
+        <Label Text="Country:" FontSize="Medium" />
+        <Label Text="{Binding Item.Country}" d:Text="Item description" FontSize="Small"/>
+        <Label Text="WeightAverage:" FontSize="Medium" />
+        <Label Text="{Binding Item.WeightAverage}" d:Text="Item description" FontSize="Small"/>
+        <Label Text="HeartRateAverage:" FontSize="Medium" />
+        <Label Text="{Binding Item.HeartRateAverage}" d:Text="Item description" FontSize="Small"/>
+        <Label Text="BilurubinAverage:" FontSize="Medium" />
+        <Label Text="{Binding Item.BilurubinAverage}" d:Text="Item description" FontSize="Small"/>
+    </StackLayout>
+    
+</ContentPage>
